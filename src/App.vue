@@ -20,29 +20,26 @@
         </v-list-tile-content>
 
       </v-list-tile>
-    </v-list> 
+    </v-list>
   </v-navigation-drawer>
 
   <v-toolbar app dark color="primary">
-    <v-toolbar-side-icon 
+    <v-toolbar-side-icon
     @click="drawer = !drawer"
     class = "hidden-md-and-up"
     ></v-toolbar-side-icon>
     <v-toolbar-title>Ad-Application</v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items class="hidden-sm-and-down">
-      
-      <v-btn 
-      flat
-      v-for = "link of links"
-      :key = "link.title"
-      :to = "link.url"
+      <v-btn
+        flat
+        v-for = "link of links"
+        :key = "link.title"
+        :to = "link.url"
       >
         <v-icon left>{{ link.icon }}</v-icon>
         {{ link.title }}
       </v-btn>
-       
-
     </v-toolbar-items>
   </v-toolbar>
 

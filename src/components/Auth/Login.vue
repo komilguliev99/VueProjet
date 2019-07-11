@@ -8,7 +8,7 @@
                 </v-toolbar>
                 <v-card-text>
                     <v-form v-model="valid" ref="form" validation>
-                        <v-text-field 
+                        <v-text-field
                             prepend-icon="person"
                             name="email"
                             label="E-mail"
@@ -47,33 +47,30 @@
 const emailRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/
 
 export default {
-    data () {
-        return {
-            email: '',
-            password: '',
-            valid: false,
-            emailRules: [
-                v => !!v || 'E-mail is required',
-                v => emailRegex.test(v) || 'E-mail must be valid'
-            ],
-            passwordRules: [
-                v => !!v || 'Password is required',
-                v => (v && v.length >= 6) || 'Password must be equal or more than 6 characters'
-            ]
-        }
-    },
-    methods: {
-        onSubmit () {
-            if (this.$refs.form.validate()) {
-                const user = {
-                    email: this.email,
-                    password: this.password
-                }
-
-                console.log(user);
-            }
-        } 
+  data () {
+    return {
+      email: '',
+      password: '',
+      valid: false,
+      emailRules: [
+        v => !!v || 'E-mail is required',
+        v => emailRegex.test(v) || 'E-mail must be valid'
+      ],
+      passwordRules: [
+        v => !!v || 'Password is required',
+        v => (v && v.length >= 6) || 'Password must be equal or more than 6 characters'
+      ]
     }
+  },
+  methods: {
+    onSubmit () {
+      if (this.$refs.form.validate()) {
+        // const user = {
+        //   email: this.email,
+        //   password: this.password
+        // }
+      }
+    }
+  }
 }
 </script>
-

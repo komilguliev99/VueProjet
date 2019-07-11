@@ -19,7 +19,7 @@
         </v-container>
         <v-container grid-list-lg>
             <v-layout row wrap>
-                <v-flex 
+                <v-flex
                     xs12
                     sm6
                     md4
@@ -54,33 +54,33 @@
 
 <script>
 export default {
-    data () {
-        return {
-            ads: [
-                {
-                    title: 'Tiger in nature',
-                    description: 'It is a description',
-                    promo: false,
-                    image: 'https://wallpapershome.ru/images/wallpapers/tigr-3840x2160-tigr-17836.jpg',
-                    id: 1
-                },
-                {
-                    title: 'Сute squirrel',
-                    description: 'It is a description',
-                    promo: false,
-                    image: 'https://www.nastol.com.ua/pic/201209/1920x1200/nastol.com.ua-32366.jpg',
-                    id: 2
-                },
-                {
-                    title: 'Racoon on a tree',
-                    description: 'It is a description',
-                    promo: false,
-                    image: 'https://s1.1zoom.ru/b5050/360/261982-frederika_2880x1800.jpg',
-                    id: 3
-                }
-            ]
+  data () {
+    return {
+      ads: [
+        {
+          title: 'Tiger in nature',
+          description: 'It is a description',
+          promo: false,
+          image: 'https://wallpapershome.ru/images/wallpapers/tigr-3840x2160-tigr-17836.jpg',
+          id: 1
+        },
+        {
+          title: 'Сute squirrel',
+          description: 'It is a description',
+          promo: false,
+          image: 'https://www.nastol.com.ua/pic/201209/1920x1200/nastol.com.ua-32366.jpg',
+          id: 2
+        },
+        {
+          title: 'Racoon on a tree',
+          description: 'It is a description',
+          promo: false,
+          image: 'https://s1.1zoom.ru/b5050/360/261982-frederika_2880x1800.jpg',
+          id: 3
         }
+      ]
     }
+  }
 }
 </script>
 
@@ -96,4 +96,3 @@ export default {
     border-top-left-radius: 5px;
 }
 </style>
-

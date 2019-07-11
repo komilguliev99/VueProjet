@@ -33,7 +33,6 @@
                     </v-list-tile>
 
                 </v-list>
-                
             </v-flex>
         </v-layout>
     </v-container>
@@ -41,24 +40,23 @@
 
 <script>
 export default {
-    data () {
-        return {
-            orders: [
-                {
-                    id: 'fds',
-                    name: 'Komil',
-                    phone: '8-925-332-00-96',
-                    adId: '123',
-                    done: false
-                }
-            ]
+  data () {
+    return {
+      orders: [
+        {
+          id: 'fds',
+          name: 'Komil',
+          phone: '8-925-332-00-96',
+          adId: '123',
+          done: false
         }
-    },
-    methods: {
-        markDone (order) {
-            order.done = true
-        }
+      ]
     }
+  },
+  methods: {
+    markDone (order) {
+      order.done = true
+    }
+  }
 }
 </script>
-

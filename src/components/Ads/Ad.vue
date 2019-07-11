@@ -9,10 +9,10 @@
                     ></v-img>
                     <v-card-text>
                         <h1 class="text--primary">Cute Squirrel</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Voluptate incidunt consequuntur nihil architecto possimus 
-                            quis natus minima eligendi veniam. Sed, est vel. 
-                            Rem obcaecati ducimus, officiis ut similique voluptatem. 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptate incidunt consequuntur nihil architecto possimus
+                            quis natus minima eligendi veniam. Sed, est vel.
+                            Rem obcaecati ducimus, officiis ut similique voluptatem.
                             Facere.</p>
                     </v-card-text>
                     <v-card-actions>
@@ -28,11 +28,8 @@
 
 <script>
 export default {
-    data () {
-        return {
-            
-        }
-    }
+  data () {
+    return {}
+  }
 }
 </script>
-

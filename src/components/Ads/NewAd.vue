@@ -4,7 +4,7 @@
             <v-flex xs12 sm6 offset-sm3>
                 <h1 class="text--secondary mb-3">Create new ad</h1>
                 <v-form v-model="valid" ref="form" validation class="mb-3">
-                    <v-text-field 
+                    <v-text-field
                         name="title"
                         label="Ad title"
                         type="text"
@@ -59,26 +59,25 @@
 
 <script>
 export default {
-    data () {
-        return {
-            title: '',
-            description: '',
-            promo: false,
-            valid: false
-        }
-    },
-    methods: {
-        createAd () {
-            if (this.$refs.form.validate()) {
-                const ad = {
-                    title: this.title,
-                    description: this.description,
-                    promo: this.promo
-                }
-                console.log(ad)
-            }
-        }
+  data () {
+    return {
+      title: '',
+      description: '',
+      promo: false,
+      valid: false
     }
+  },
+  methods: {
+    createAd () {
+      if (this.$refs.form.validate()) {
+        const ad = {
+          title: this.title,
+          description: this.description,
+          promo: this.promo
+        }
+        console.log(ad)
+      }
+    }
+  }
 }
 </script>
-
