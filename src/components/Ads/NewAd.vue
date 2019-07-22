@@ -73,9 +73,10 @@ export default {
         const ad = {
           title: this.title,
           description: this.description,
-          promo: this.promo
+          promo: this.promo,
+          image: 'http://isha.sadhguru.org/blog/wp-content/uploads/2016/05/natures-temples.jpg'
         }
-        console.log(ad)
+        this.$store.dispatch('createAd', ad)
       }
     }
   }
