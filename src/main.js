@@ -30,5 +30,9 @@ new Vue({
       appId: '1:1072219832452:web:a7bf4cd6c3b48f14'
     }
     fb.initializeApp(firebaseConfig)
+
+    fb.auth().onAuthStateChanged(user => {
+      this.$store.dispatch('autoLoginUser', user)
+    })
   }
 })

@@ -84,6 +84,11 @@ export default {
           })
       }
     }
+  },
+  created () {
+    if (this.$route.query['loginError']) {
+      this.$store.dispatch('setError', 'Please, sign in to access this page!')
+    }
   }
 }
 </script>
