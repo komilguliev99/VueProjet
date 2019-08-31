@@ -43,7 +43,8 @@
                     <v-btn
                         color="primary"
                         @click="onSubmit"
-                        :disabled="!valid"
+                        :loading="loading"
+                        :disabled="!valid || loading"
                     >Sign up</v-btn>
                 </v-card-actions>
                 </v-card>
@@ -77,13 +78,25 @@ export default {
       ]
     }
   },
+  computed: {
+    loading () {
+      return this.$store.getters.loading
+    }
+  },
   methods: {
     onSubmit () {
       if (this.$refs.form.validate()) {
-        // const user = {
-        //   email: this.email,
-        //   password: this.password
-        // }
+        const user = {
+          email: this.email,
+          password: this.password
+        }
+        this.$store.dispatch('registerUser', user)
+          .then(() => {
+            this.$router.push('/')
+          })
+          .catch(error => {
+            console.log(error)
+          })
       }
     }
   }
